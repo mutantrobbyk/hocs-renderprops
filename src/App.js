@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import Hooks from './Components/Hooks';
-// import HOC from './Components/HOC';
-// import RenderProp from './Components/RenderProp';
-// import Toggle from './Components/Toggle';
+import RenderProp from './Components/RenderProp';
+import HOC from './Components/HOC';
+
+import Toggle from './Components/Toggle';
 
 const artists = [
   {
@@ -44,9 +45,17 @@ class App extends Component {
         <h1>Hooks</h1>
         <Hooks />
         <h1>Higher Order Component</h1>
-        {/* HOC examples go here */}
+        <Toggle render = {() => (
+        <>
+          <HOC list={artists} genre = 'Rap' />
+          <HOC list={artists} genre = 'Alternative' />
+          <HOC list={artists} genre = '' />
+        </>
+        )} />
         <h1>Render Props</h1>
-        {/* Render Prop examples go here */}
+        <RenderProp render={(props) => props('Rap', artists)}/>
+        <RenderProp render={(props) => props('Alternative', artists)}/>
+        <RenderProp render={(props) => props('', artists)}/>
       </div>
     );
   }
