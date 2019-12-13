@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Hooks from './Components/Hooks';
-import RenderProp from './Components/RenderProp';
-import HOC from './Components/HOC';
+// import RenderProp from './Components/RenderProp';
+// import HOC from './Components/HOC';
 
 import Toggle from './Components/Toggle';
 
