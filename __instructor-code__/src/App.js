@@ -53,9 +53,9 @@ class App extends Component {
         </>
         )} />
         <h1>Render Props</h1>
-         <RenderProp render={(props) => props('Rap', artists)}/>
-         <RenderProp render={(props) => props('Alternative', artists)}/>
-         <RenderProp render={(props) => props('', artists)}/>
+        <RenderProp render={(props) => props('Rap', artists)} />
+        <RenderProp render={(props) => props('Alternative', artists)} />
+        <RenderProp render={(props) => props('', artists)} />
       </div>
     );
   }

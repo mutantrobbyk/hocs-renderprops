@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const RenderProp = ({render}) => (
     render((genre, list) => {
-        const filteredList = genre ? list.filter((artist) => artist.genre === genre): list
-        return(
+        const filteredList = genre ? list.filter((artist) => artist.genre === genre) : list
+        return (
             <div>
             {filteredList.map((artist) => (
                 <div className = 'artist-container' key = {artist.name}>
@@ -14,9 +14,9 @@ const RenderProp = ({render}) => (
                     </div>
                 </div>
             ))}
-        </div>
+            </div>
         )
     })
 )
 
-export default RenderProp
+export default RenderProp;
