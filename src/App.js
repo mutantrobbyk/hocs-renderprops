@@ -47,15 +47,11 @@ class App extends Component {
         <h1>Higher Order Component</h1>
         <Toggle render = {() => (
         <>
-          <HOC list={artists} genre = 'Rap' />
-          <HOC list={artists} genre = 'Alternative' />
-          <HOC list={artists} genre = '' />
+          {/* HOC components go here */}
         </>
         )} />
         <h1>Render Props</h1>
-        <RenderProp render={(props) => props('Rap', artists)}/>
-        <RenderProp render={(props) => props('Alternative', artists)}/>
-        <RenderProp render={(props) => props('', artists)}/>
+          {/* renderprop components go here */}
       </div>
     );
   }
