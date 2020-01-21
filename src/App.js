@@ -44,18 +44,18 @@ class App extends Component {
       <div className="App">
         <h1>Hooks</h1>
         <Hooks />
-        <h1>Higher Order Component</h1>
+        {/* <h1>Higher Order Component</h1>
         <Toggle render = {() => (
         <>
           <HOC list={artists} genre=''/>
           <HOC list={artists} genre='Rap'/>
           <HOC list={artists} genre='Alternative'/>
         </>
-        )} />
-        <h1>Render Props</h1>
+        )} /> */}
+        {/* <h1>Render Props</h1>
          <RenderProp render={(props) => props('Rap', artists)}/>
          <RenderProp render={(props) => props('Alternative', artists)}/>
-         <RenderProp render={(props) => props('', artists)}/>
+         <RenderProp render={(props) => props('', artists)}/> */}
       </div>
     );
   }
